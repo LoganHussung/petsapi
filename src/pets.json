@@ -1,0 +1,55 @@
+Type: GET
+Route: /
+Returns HTML: <div>Hello world</div>
+
+
+Type: GET
+Route: /api/pets
+Returns JSON: A list of pets that looks like this:
+
+{
+  "data": {
+    "pets": [
+      {
+        "id": 1
+        "name": "Fluffy",
+        "age": 5,
+        "uri": "/api/pets/1"
+      }, {
+        "id": 2
+        "name": "Bob",
+        "age": 6,
+        "uri": "/api/pets/1"
+      }, {
+        "id": 3
+        "name": "Spike",
+        "age": 17,
+        "uri": "/api/pets/1"
+      },
+    ]
+  }
+}
+
+
+Type: GET
+Route: /api/pets/1
+Returns JSON:
+
+{
+  "id": 1,
+  "name": "Fluffy",
+  "age": 5,
+  "type": "dog"
+}
+
+
+Type: GET
+Router: /api/pets/2
+Returns JSON:
+
+{
+  "id": 2,
+  "name": "Bob",
+  "age": 6,
+  "type": "cat"
+}

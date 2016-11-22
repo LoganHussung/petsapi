@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/LoganHussung/petsapi/issues"
   },
-  "homepage": "https://github.com/LoganHussung/petsapi#readme"
+  "homepage": "https://github.com/LoganHussung/petsapi#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
